@@ -6,5 +6,5 @@ from .state import UserState
 
 
 class User(BaseModel):
-    name: str
+    guid: str
     state: Optional[UserState]
