@@ -45,4 +45,6 @@ logs/
 
 venv/
 .vs/
+dist/
+
 
