@@ -47,3 +47,4 @@ venv/
 .vs/
 dist/
 src/rowantree.contracts.egg-info/
+.coverage
