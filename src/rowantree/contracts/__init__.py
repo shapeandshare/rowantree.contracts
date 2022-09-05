@@ -1,3 +1,5 @@
+""" rowantree.contracts namespace """
+
 from .dto.action.action import Action
 from .dto.action.action_queue import ActionQueue
 from .dto.merchant.merchant import Merchant

@@ -1,5 +1,5 @@
 # Rowan Tree Contracts
-This solution contains the Python contracts for The Rowan Tree.
+Python contracts for The Rowan Tree.
 
 ## Installation
 The latest version be using pip:
