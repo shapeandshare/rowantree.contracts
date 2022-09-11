@@ -2,6 +2,8 @@
 
 from pydantic import BaseModel
 
+from ...feature_type import FeatureType
+from ...store_type import StoreType
 from ..merchant.merchant import Merchant
 from .feature import UserFeature
 from .income import UserIncome
@@ -35,10 +37,10 @@ class UserState(BaseModel):
     """
 
     active: bool
-    stores: list[UserStore]
-    incomes: list[UserIncome]
-    features: list[UserFeature]
-    active_feature: UserFeature
+    stores: dict[StoreType, UserStore]
+    incomes: dict[StoreType, UserIncome]
+    features: dict[FeatureType, UserFeature]
+    active_feature: FeatureType
     population: int
-    merchants: list[Merchant]
+    merchants: set[StoreType]
     notifications: list[UserNotification]

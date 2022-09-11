@@ -12,8 +12,8 @@ class WorldStatus(BaseModel):
 
     Attributes
     ----------
-    active_players: list[str]
-        A list of active users.
+    active_players: set[str]
+        A set of active users.
     """
 
-    active_players: list[str]
+    active_players: set[str]

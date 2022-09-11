@@ -4,6 +4,8 @@ from typing import Optional
 
 from pydantic import BaseModel
 
+from ...feature_type import FeatureType
+
 
 class UserFeature(BaseModel):
     """
@@ -18,5 +20,5 @@ class UserFeature(BaseModel):
         The description of the feature.
     """
 
-    name: str
+    name: FeatureType
     description: Optional[str]

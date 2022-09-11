@@ -1,6 +1,7 @@
 """ UserFeatures Definition """
 from pydantic import BaseModel
 
+from ...feature_type import FeatureType
 from .feature import UserFeature
 
 
@@ -22,4 +23,4 @@ class UserFeatures(BaseModel):
     We want to make this a dictionary in the future given the access pattern (and uniqueness constraint) of the data.
     """
 
-    features: list[UserFeature]
+    features: dict[FeatureType, UserFeature]

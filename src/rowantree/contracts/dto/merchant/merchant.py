@@ -1,6 +1,8 @@
 """ Merchant Definition """
 from pydantic import BaseModel
 
+from ...store_type import StoreType
+
 
 class Merchant(BaseModel):
     """
@@ -9,8 +11,8 @@ class Merchant(BaseModel):
 
     Attributes
     ----------
-    name: str
-        The name of the merchant.
+    name: StoreType
+        The `StoreType`
     """
 
-    name: str
+    name: StoreType

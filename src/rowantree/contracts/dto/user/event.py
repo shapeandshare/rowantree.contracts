@@ -1,8 +1,11 @@
 """ User Event Definition """
 
-from typing import Optional
+from typing import Optional, Union
 
 from pydantic import BaseModel
+
+from ...store_type import StoreType
+from ...user_event_type_other import UserEventTypeOther
 
 
 class UserEvent(BaseModel):
@@ -15,7 +18,7 @@ class UserEvent(BaseModel):
     ----------
     title: str
         The title of the event.
-    text: Optional[list[str]]
+    text: list[str]
         The optional list of text(s) of event.  The set of entries are ment to be rendered sequentially user-side.
     reward: Optional[dict[str, int]]
         The optional list of rewards (positive deltas to apply to the user)
@@ -24,6 +27,7 @@ class UserEvent(BaseModel):
     """
 
     title: str
-    text: Optional[list[str]]
-    reward: Optional[dict[str, int]]
-    curse: Optional[dict[str, int]]
+    text: dict[int, str]
+    notification: dict[int, str]
+    reward: dict[Union[UserEventTypeOther, StoreType], int]
+    curse: dict[Union[UserEventTypeOther, StoreType], int]

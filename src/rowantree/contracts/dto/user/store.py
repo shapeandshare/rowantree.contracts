@@ -4,6 +4,8 @@ from typing import Optional
 
 from pydantic import BaseModel
 
+from ...store_type import StoreType
+
 
 class UserStore(BaseModel):
     """
@@ -20,6 +22,6 @@ class UserStore(BaseModel):
         The amount of the user store.
     """
 
-    name: str
+    name: StoreType
     description: Optional[str]
     amount: int

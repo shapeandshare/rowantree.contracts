@@ -2,6 +2,7 @@
 
 from pydantic import BaseModel
 
+from ...store_type import StoreType
 from .store import UserStore
 
 
@@ -19,8 +20,8 @@ class UserStores(BaseModel):
 
     Attributes
     ----------
-    stores: list[UserStore]
+    stores: dict[StoreType, UserStore]
         A list of UserStore objects.
     """
 
-    stores: list[UserStore]
+    stores: dict[StoreType, UserStore]
