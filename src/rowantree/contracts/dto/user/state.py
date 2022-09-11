@@ -2,9 +2,9 @@
 
 from pydantic import BaseModel
 
-from ...feature_details import FeatureDetails
 from ...feature_type import FeatureType
 from ...store_type import StoreType
+from .feature_state import UserFeatureState
 from .income import UserIncome
 from .notification import UserNotification
 from .store import UserStore
@@ -27,7 +27,7 @@ class UserState(BaseModel):
         A set of user features.
     active_feature: FeatureType
         The current active user feature (location the user is currently in).
-    active_feature_state: FeatureDetails
+    active_feature_state: UserFeatureState
         The active feature details.
     population: int
         The size of the user population.
@@ -42,7 +42,7 @@ class UserState(BaseModel):
     incomes: dict[StoreType, UserIncome]
     features: set[FeatureType]
     active_feature: FeatureType
-    active_feature_state: FeatureDetails
+    active_feature_state: UserFeatureState
     population: int
     merchants: set[StoreType]
     notifications: list[UserNotification]
