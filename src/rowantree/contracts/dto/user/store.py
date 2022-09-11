@@ -14,10 +14,10 @@ class UserStore(BaseModel):
 
     Attributes
     ----------
-    name: str
-
+    name: StoreType
+        The StoreType of the store.
     description: Optional[str]
-
+        The optional description of the store.
     amount: int
         The amount of the user store.
     """

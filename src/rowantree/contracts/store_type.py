@@ -1,8 +1,9 @@
+""" Store Type Definition """
 from enum import Enum
 
 
 class StoreType(str, Enum):
-    """"""
+    """Store Type Enumeration"""
 
     GRENADE = "grenade"
     BAYONET = "bayonet"

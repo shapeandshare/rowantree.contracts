@@ -14,8 +14,8 @@ class UserFeature(BaseModel):
 
     Attributes
     ----------
-    name: str
-        The name of the feature.
+    name: FeatureType
+        The FeatureType of the feature.
     description: Optional[str]
         The description of the feature.
     """

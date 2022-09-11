@@ -16,8 +16,8 @@ class UserIncome(BaseModel):
     ----------
     amount: int
         The amount (number of workers) of the income.
-    name: str
-        The name of the income.
+    name: StoreType
+        The StoreType of the income.
     description: Optional[str]
         The optional description of the income.
     """
