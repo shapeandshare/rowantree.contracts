@@ -12,3 +12,6 @@ from .dto.user.state import UserState
 from .dto.user.store import UserStore
 from .dto.user.user import User
 from .dto.world.status import WorldStatus
+from .feature_type import FeatureType
+from .store_type import StoreType
+from .user_event_other_type import UserEventOtherType
