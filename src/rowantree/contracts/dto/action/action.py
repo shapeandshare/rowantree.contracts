@@ -4,8 +4,8 @@ from pydantic import BaseModel
 
 class Action(BaseModel):
     """
-        Action DTO
-        This DTO defines the command queue action.
+    Action DTO
+    This DTO defines the command queue action.
 
     Attributes
     ----------
