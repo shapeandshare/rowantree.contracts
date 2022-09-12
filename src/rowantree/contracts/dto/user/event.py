@@ -24,6 +24,8 @@ class UserEvent(BaseModel):
         Dictionary of rewards (positive deltas to apply to the user)
     curse: dict[Union[UserEventTypeOther, StoreType], int]
         Dictionary of curses (negative deltas to apply to the user)
+    requirements: dict[Union[UserEventOtherType, StoreType], int]
+        Dictionary of requirements (amounts user must meet to trigger the event)
     """
 
     title: str
@@ -31,3 +33,4 @@ class UserEvent(BaseModel):
     notification: dict[int, str]
     reward: dict[Union[UserEventOtherType, StoreType], int]
     curse: dict[Union[UserEventOtherType, StoreType], int]
+    requirements: dict[Union[UserEventOtherType, StoreType], int]
