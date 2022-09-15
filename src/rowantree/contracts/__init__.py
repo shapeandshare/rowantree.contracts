@@ -2,6 +2,7 @@
 
 from .dto.action.action import Action
 from .dto.action.action_queue import ActionQueue
+from .dto.base_model import BaseModel
 from .dto.user.event import UserEvent
 from .dto.user.feature_state import UserFeatureState
 from .dto.user.income import UserIncome

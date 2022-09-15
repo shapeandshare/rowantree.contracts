@@ -2,10 +2,9 @@
 
 from typing import Union
 
-from pydantic import BaseModel
-
 from ...store_type import StoreType
 from ...user_event_other_type import UserEventOtherType
+from ..base_model import BaseModel
 
 
 class UserEvent(BaseModel):

@@ -2,9 +2,8 @@
 
 from typing import Optional
 
-from pydantic import BaseModel
-
 from ...feature_details import FeatureDetails
+from ..base_model import BaseModel
 
 
 class UserFeatureState(BaseModel):

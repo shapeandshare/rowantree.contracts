@@ -1,9 +1,8 @@
 """ UserState Definition """
 
-from pydantic import BaseModel
-
 from ...feature_type import FeatureType
 from ...store_type import StoreType
+from ..base_model import BaseModel
 from .feature_state import UserFeatureState
 from .income import UserIncome
 from .notification import UserNotification
