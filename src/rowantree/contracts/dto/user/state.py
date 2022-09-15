@@ -4,7 +4,6 @@ from ...feature_type import FeatureType
 from ...store_type import StoreType
 from ..base_model import BaseModel
 from .feature_state import UserFeatureState
-from .income import UserIncome
 from .notification import UserNotification
 from .store import UserStore
 
@@ -20,7 +19,7 @@ class UserState(BaseModel):
         Whether the user is active server side.
     stores: dict[StoreType, UserStore]
         A dictionary of user stores, keyed by store name.
-    incomes: dict[StoreType, UserIncome]
+    incomes: dict[StoreType, UserStore]
         A dictionary of user incomes, keyed by income name.
     features: set(FeatureType)
         A set of user features.
@@ -36,7 +35,7 @@ class UserState(BaseModel):
 
     active: bool
     stores: dict[StoreType, UserStore]
-    incomes: dict[StoreType, UserIncome]
+    incomes: dict[StoreType, UserStore]
     features: set[FeatureType]
     active_feature_state: UserFeatureState
     population: int
