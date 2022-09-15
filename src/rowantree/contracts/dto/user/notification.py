@@ -2,8 +2,7 @@
 
 from datetime import datetime
 
-from pydantic import BaseModel
-
+from ..base_model import BaseModel
 from .event import UserEvent
 
 

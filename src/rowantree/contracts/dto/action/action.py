@@ -1,5 +1,5 @@
 """ Command Queue Action Definition """
-from pydantic import BaseModel
+from ..base_model import BaseModel
 
 
 class Action(BaseModel):
