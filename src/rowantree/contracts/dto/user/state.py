@@ -24,8 +24,6 @@ class UserState(BaseModel):
         A dictionary of user incomes, keyed by income name.
     features: set(FeatureType)
         A set of user features.
-    active_feature: FeatureType
-        The current active user feature (location the user is currently in).
     active_feature_state: UserFeatureState
         The active feature details.
     population: int
@@ -40,7 +38,6 @@ class UserState(BaseModel):
     stores: dict[StoreType, UserStore]
     incomes: dict[StoreType, UserIncome]
     features: set[FeatureType]
-    active_feature: FeatureType
     active_feature_state: UserFeatureState
     population: int
     merchants: set[StoreType]
