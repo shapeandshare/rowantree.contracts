@@ -2,7 +2,7 @@
 from enum import Enum
 
 
-class FeatureDetails(str, Enum):
+class FeatureDetailType(str, Enum):
     """User Feature State Enumeration"""
 
     SHADOWY_GROVE = "A Shadowy Grove"
