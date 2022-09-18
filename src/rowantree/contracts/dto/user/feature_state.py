@@ -2,8 +2,8 @@
 
 from typing import Optional
 
-from ...feature_details import FeatureDetails
-from ...feature_type import FeatureType
+from ...types.feature_detail_type import FeatureDetailType
+from ...types.feature_type import FeatureType
 from ..base_model import BaseModel
 
 
@@ -16,5 +16,5 @@ class UserFeatureState(BaseModel):
     """
 
     name: Optional[FeatureType]
-    details: Optional[FeatureDetails]
+    details: Optional[FeatureDetailType]
     description: Optional[str]

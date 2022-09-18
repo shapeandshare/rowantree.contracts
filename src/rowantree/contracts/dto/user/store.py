@@ -2,7 +2,7 @@
 
 from typing import Optional
 
-from ...store_type import StoreType
+from ...types.store_type import StoreType
 from ..base_model import BaseModel
 
 

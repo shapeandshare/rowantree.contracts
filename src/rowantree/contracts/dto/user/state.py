@@ -1,9 +1,11 @@
 """ UserState Definition """
 
-from ...feature_type import FeatureType
-from ...store_type import StoreType
+from ...types.feature_type import FeatureType
+from ...types.income_source_type import IncomeSourceType
+from ...types.store_type import StoreType
 from ..base_model import BaseModel
 from .feature_state import UserFeatureState
+from .income import UserIncome
 from .notification import UserNotification
 from .store import UserStore
 
@@ -19,7 +21,7 @@ class UserState(BaseModel):
         Whether the user is active server side.
     stores: dict[StoreType, UserStore]
         A dictionary of user stores, keyed by store name.
-    incomes: dict[StoreType, UserStore]
+    incomes: dict[IncomeSourceType, UserIncome]
         A dictionary of user incomes, keyed by income name.
     features: set(FeatureType)
         A set of user features.
@@ -35,7 +37,7 @@ class UserState(BaseModel):
 
     active: bool
     stores: dict[StoreType, UserStore]
-    incomes: dict[StoreType, UserStore]
+    incomes: dict[IncomeSourceType, UserIncome]
     features: set[FeatureType]
     active_feature_state: UserFeatureState
     population: int

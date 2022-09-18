@@ -2,8 +2,8 @@
 
 from typing import Union
 
-from ...store_type import StoreType
-from ...user_event_other_type import UserEventOtherType
+from ...types.store_type import StoreType
+from ...types.user_event_other_type import UserEventOtherType
 from ..base_model import BaseModel
 
 
