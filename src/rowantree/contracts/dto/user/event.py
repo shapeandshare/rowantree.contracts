@@ -10,6 +10,7 @@ from ..base_model import BaseModel
 class UserEvent(BaseModel):
     """
     UserEvent DTO
+
     Defines an event of a user.
     In practice this is a state change for the user as a result of an in-world story or encounter.
 
@@ -19,6 +20,10 @@ class UserEvent(BaseModel):
         The title of the event.
     text: dict[int, str]
         A numbered set of entries meant to be rendered sequentially user-side.
+        The textual description/narrative of the event.
+    notification: dict[int, str]
+        A numbered set of entries meant to ve rendered sequentially user-side.
+        The user notification (alert, notification panel based summary/details of the event).
     reward: dict[Union[UserEventOtherType, StoreType], int]
         Dictionary of rewards (positive deltas to apply to the user)
     curse: dict[Union[UserEventTypeOther, StoreType], int]

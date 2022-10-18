@@ -16,7 +16,7 @@ class UserNotification(BaseModel):
     index: int
         Event ID (unique)
     timestamp: datetime
-        Server time that the event occured.
+        Server time that the event occurred.
     event: UserEvent
         An UserEvent object of the event.
     """

@@ -13,6 +13,12 @@ class UserFeatureState(BaseModel):
 
     Attributes
     ----------
+    name: Optional[FeatureType]
+        An optional `FeatureType` of the user feature state.
+    details: Optional[FeatureDetailType]
+        An optional `FeatureDetailType` of the user feature state.
+    description: Optional[str]
+        An optional textual description of the user feature state.
     """
 
     name: Optional[FeatureType]

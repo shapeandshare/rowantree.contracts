@@ -1,5 +1,5 @@
 # Rowan Tree Contracts
-Python contracts for The Rowan Tree.
+Provides lower level contracts and types for The Rowan Tree ecosystem.
 
 ## Installation
 The latest version be using pip:
