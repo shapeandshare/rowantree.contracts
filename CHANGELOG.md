@@ -2,5 +2,6 @@
 
 ----------
 
-## 0.5.1 (2022-09-05)
-- Added documentation
+## 1.0.0 (2022-10-18)
+- Initial 1.0 release.
+
