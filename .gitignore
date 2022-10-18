@@ -48,3 +48,4 @@ venv/
 dist/
 src/rowantree.contracts.egg-info/
 .coverage
+coverage.xml

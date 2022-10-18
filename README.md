@@ -1,6 +1,15 @@
 # Rowan Tree Contracts
 Provides lower level contracts and types for The Rowan Tree ecosystem.
 
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.contracts&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.contracts)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.contracts&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.contracts)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.contracts&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.contracts)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.contracts&metric=coverage)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.contracts)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.contracts&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.contracts)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.contracts&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.contracts)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.contracts&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.contracts)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=shapeandshare_rowantree.contracts&metric=bugs)](https://sonarcloud.io/summary/new_code?id=shapeandshare_rowantree.contracts)
+
 ## Installation
 The latest version be using pip:
 > pip install rowantree.contracts
